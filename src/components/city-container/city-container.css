@@ -1,0 +1,17 @@
+.city-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baumans', cursive;
+    justify-content: center;
+    align-items: center;
+}
+
+.city {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.lat-long {
+    font-size: 12px;
+    margin-top: 0;
+}

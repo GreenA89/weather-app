@@ -1,0 +1,11 @@
+.wind-sunrise {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Baumans', cursive;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.wind-right {
+    margin-left: 50px;
+}

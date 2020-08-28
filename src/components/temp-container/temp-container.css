@@ -1,0 +1,10 @@
+.temp-container {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Baumans', cursive;
+    font-size: 12px;
+}
+
+.temp-right {
+    margin-left: 50px;
+}
