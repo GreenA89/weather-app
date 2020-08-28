@@ -1,0 +1,6 @@
+.main-weather {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+} 

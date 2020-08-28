@@ -16,6 +16,7 @@ const WeatherApp = () => {
     const [lat, setLat] = useState(0);
     const [long, setLong] = useState(0);
     const [sun, setSun] = useState({})
+    const [cloud, setCloud] = useState(0);
 
     const newWeather = async () => {
         setClicked(!clicked)
@@ -27,6 +28,7 @@ const WeatherApp = () => {
         setCity(weather.name + ', ' + weather.sys.country);
         setLong(weather.coord.lon);
         setLat(weather.coord.lat);
+        setCloud(weather.clouds)
         setSun({sunrise: weather.sys.sunrise, sunset: weather.sys.sunset})
         console.log(weather);
     }
@@ -34,7 +36,7 @@ const WeatherApp = () => {
     return (
         <div className='weather-app'>
            {clicked ? 
-           <ResultsContainer city={city} lat={lat} long={long} temp={main} wind={wind} sun={sun}/> 
+           <ResultsContainer city={city} lat={lat} long={long} temp={main} wind={wind} sun={sun} weather={weather} cloud={cloud}/> 
            : 
            <button className='button' onClick={newWeather}>Get Weather!</button>
            }

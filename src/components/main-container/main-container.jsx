@@ -2,6 +2,7 @@ import React from 'react';
 // Components
 import TempContainer from '../temp-container/temp-container';
 import WindSunrise from '../wind-sunrise/wind-sunrise';
+import MainWeather from '../main-weather/main-weather';
 
 import '../main-container/main-container.css';
 
@@ -13,7 +14,7 @@ const MainContainer = (props) => {
                 <WindSunrise wind={props.wind} sun={props.sun} />
             </div>
             <div className='right-div'>
-
+                <MainWeather weather={props.weather} cloud={props.cloud} />
             </div>
         </div>
     )

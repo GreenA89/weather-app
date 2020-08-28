@@ -9,7 +9,7 @@ const ResultsContainer = (props) => {
     return (
         <div className='results-container'>
             <CityContainer city={props.city} lat={props.lat} long={props.long} />
-            <MainContainer temp={props.temp} sun={props.sun} wind={props.wind} />
+            <MainContainer temp={props.temp} sun={props.sun} wind={props.wind} weather={props.weather} cloud={props.cloud}/>
         </div>
     )
 }

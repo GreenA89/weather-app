@@ -10,8 +10,6 @@ const WindSunrise = (props) => {
     let sunset = new Date(props.sun.sunset * 1000); 
     sunset = sunset.toUTCString();
 
-    console.log(sunrise)    
-
     return (
         <div className='wind-sunrise'>
             <div className='wind-left'>
