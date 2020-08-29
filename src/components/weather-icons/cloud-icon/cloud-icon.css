@@ -1,0 +1,30 @@
+.cloud-icon {
+    margin-top:70px;
+    width: 320px;
+    height: 90px;
+    background: grey;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+    border-radius: 100px;
+}
+
+.cloud-icon:after, .cloud-icon:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud-icon:after {
+    width: 100px;
+    height: 100px;
+    top: -130px;
+    left: -140px;
+}
+
+.cloud-icon:before{
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    left: 100px;
+}

@@ -1,0 +1,59 @@
+.rain-icon {
+    margin-top:0;
+    width: 180px;
+    height: 60px;
+    background: grey;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.7);
+    border-radius: 100px;
+}
+
+.rain-icon:after, .rain-icon:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.rain-icon:after {
+    width: 50px;
+    height: 50px;
+    top: -80px;
+    left: -80px;
+}
+
+.rain-icon:before{
+    width: 100px;
+    height: 100px;
+    top: -60px;
+    left: 60px;
+}
+
+.rain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rain-drop {
+    width: 20px;
+    height: 20px;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(90deg);
+    margin-top: 20px;
+    background: linear-gradient(90deg, lightblue, blue)
+}
+
+.one {
+    position: relative;
+    top: 10px;
+}
+
+.two {
+    position: relative;
+}
+
+.three {
+    position: relative;
+    top: -10px;
+}

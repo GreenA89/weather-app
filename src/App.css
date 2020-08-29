@@ -1,11 +1,12 @@
 .app {
   background: purple;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .decoration {
@@ -17,4 +18,26 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.background-ground {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  margin-top: 455px;
+}
+
+.credit {
+  color: white;
+  z-index: 3;
+  position: relative;
+  top: 50px;
+  font-family: 'Baumans', cursive;
 }

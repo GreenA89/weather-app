@@ -1,0 +1,17 @@
+.night-clear {
+    width: 350px;
+    height: 170px;
+    border-radius: 30px;
+    background: linear-gradient(to top, navy 5%, black 60%)
+}
+
+.moon {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: radial-gradient(circle at right, lightgrey, grey, rgba(0,0,0));
+    position: relative;
+    left: 50px;
+    top: 20px;
+    box-shadow: 10px 10px 50px 10px grey
+}
